@@ -1,0 +1,509 @@
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.882);
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 40px;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Style the products section */
+.products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  max-width: 100%;
+  height: 300px;
+}
+
+/* Style the about and contact sections */
+.about,
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.right {
+  background-color: rgb(43, 44, 45);
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+}
+
+.left {
+  background-image: url(https://5.imimg.com/data5/VJ/XJ/MY-9495934/ewaste-management-service.jpg);
+  width: 50%;
+}
+
+.mn {
+  display: flex;
+  height: 80vh;
+}
+
+.ser {
+  width: 14px;
+  height: 10px;
+}
+
+.butt button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Primary button style */
+.btn.primary {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.btn.primary:hover {
+  background-color: #0056b3;
+}
+
+.left .butt {
+  margin: 35%;
+  display: flex;
+}
+
+.right video {
+  width: 100%;
+  height: 100%;
+}
+
+
+.sell {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sell h1 {
+  text-align: center;
+  color: #333;
+}
+
+.sell .form-group {
+  margin-bottom: 20px;
+}
+
+.sell label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.sell input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.sell input[type="file"] {
+  margin-top: 4px;
+}
+
+.sell button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sell button:hover {
+  background-color: #0056b3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 15px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f57224;
+}
+
+.product-button {
+  display: block;
+  width: 100%;
+  background-color: #f57224;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-button:hover {
+  background-color: #d45012;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+
+.product-image {
+  width: 290px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+
+.product-details {
+  margin-top: 10px;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+.product-rating {
+  color: #ffc107;
+  font-size: 1.25rem;
+  margin-top: 5px;
+}
+
+/* Styling for the condition select */
+.condition-select {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Styling for the Buy Now button */
+.buy-now-button {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.prod {
+  margin-left: 180px;
+}
+
+/* Contact Section Styles */
+#contact {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.contact-mf {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+/* Form Input Styles */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+}
+
+/* Submit Button Styles */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Text Styles */
+.title-left {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Icon Styles */
+.bi {
+  vertical-align: middle;
+}
+
+/* Social Icons Styles */
+.socials ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.socials li {
+  font-size: 24px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .contact-mf {
+    padding: 20px;
+  }
+}
+
+
+/* Container Styles */
+.container {
+  position: relative;
+}
+
+/* Get in Touch Title */
+.title-left {
+  color: #007bff;
+}
+
+/* Contact Information List */
+.list-ico {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-ico li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.list-ico .bi {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Social Icons */
+.socials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socials li a {
+  text-decoration: none;
+  color: #333;
+}
+.prod{
+  margin-top: 90px;
+}
+
+.socials li a:hover {
+  color: #007bff;
+}
+
+/* About Section Styles */
+#about {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+#about h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  #about {
+    padding: 40px 0;
+  }
+
+  #about h2 {
+    font-size: 28px;
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+}

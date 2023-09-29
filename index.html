@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronics Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="/asset/logo.png" alt="Brand Logo">
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/products.html">Products</a></li>
+      </ul>
+      <div class="user">
+        <a href="#">Login</a>
+        <input type="search" placeholder="Search">
+        <button>
+          <img class="ser" src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-zik280t3.png"
+            alt="search">
+        </button>
+      </div>
+    </nav>
+  </header>
+  <section class="mn">
+    <div class="left">
+      <div class="butt">
+        <a href="/products.html"><button class="btn primary">BUY NOW</button></a>
+        <a href="#sellnow"><button class="btn primary">SELL NOW</button></a>
+      </div>
+    </div>
+    <div class="right">
+      <video controls muted autoplay src="/asset/WKCRI3KN9FV0UQ7Y.mp4"></video>
+    </div>
+
+  </section>
+
+
+
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>"Welcome to Electronics Store, your one-stop destination for buying and selling electronic items such as mobile
+      phones, laptops, cameras, and more. We are passionate about technology and believe in providing a convenient
+      platform for tech enthusiasts to connect. Our mission is to make it easy for you to find the latest gadgets, sell
+      your old electronics, and connect with other tech-savvy individuals. Whether you're looking for a new smartphone
+      or want to declutter your home by selling your used gadgets, we've got you covered. At Electronics Store, we
+      prioritize user satisfaction and safety, ensuring secure transactions and a user-friendly interface to make your
+      online experience enjoyable and hassle-free. Join our community of tech lovers today!"</p>
+  </section>
+
+  <section id="sellnow">
+    <div class="sell">
+      <h1>Sell Your Old Product</h1>
+      <form action="submit.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="productName">Product Name/Model:</label>
+          <input type="text" id="productName" name="productName" required>
+        </div>
+        <div class="form-group">
+          <label for="condition">Condition:</label>
+          <select id="condition" name="condition">
+            <option value="New">New</option>
+            <option value="Like New">Like New</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age">Age of Product (in years):</label>
+          <input type="number" id="age" name="age" min="0">
+        </div>
+        <div class="form-group">
+          <label for="purchasePrice">Original Purchase Price ($):</label>
+          <input type="number" id="purchasePrice" name="purchasePrice" min="0">
+        </div>
+        <div class="form-group">
+          <label for="askingPrice">Asking Price ($):</label>
+          <input type="number" id="askingPrice" name="askingPrice" required min="0">
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="workingCondition">Detailed Working Status:</label>
+          <textarea id="workingCondition" name="workingCondition" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="images">Upload Images:</label>
+          <input type="file" id="images" name="images[]" accept="image/*" multiple required>
+        </div>
+        <div class="form-group">
+          <label for="accessories">Accessories Included:</label>
+          <input type="text" id="accessories" name="accessories">
+        </div>
+        <div class="form-group">
+          <label for="paymentMethod">Preferred Payment Method:</label>
+          <select id="paymentMethod" name="paymentMethod">
+            <option value="Cash">Cash</option>
+            <option value="PayPal">PayPal</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contactMethod">Preferred Contact Method:</label>
+          <select id="contactMethod" name="contactMethod">
+            <option value="Email">Email</option>
+            <option value="Phone">Phone</option>
+            <option value="WhatsApp">WhatsApp</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" required> I have read and agree to the terms and conditions.
+          </label>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit Listing</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+    style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Send Message Us
+                    </h5>
+                  </div>
+                  <div>
+                    <form id="submit-form" action="" />
+
+                    <div class="row">
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                            required>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                            required>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                            required>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                            required></textarea>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="title-left">Your Response Is Valuable</p>
+                      </div>
+                      <div class="col-md-12 text-center">
+                        <button type="submit" onclick="myFunction()" id="myButton"
+                          class="button button-a button-big button-rouded">Send Message</button>
+                      </div>
+                    </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      "Thank you for taking the time to visit our website. If you have any questions, comments, or
+                      suggestions, we would love to hear from you.
+                      Please feel free to use the contact form below to get in touch with us. Alternatively, you can
+                      also reach out to us via email or phone
+                      using the contact details provided on this page. We value your feedback and are always striving to
+                      improve our services. So,
+                      don't hesitate to let us know how we can assist you. We look forward to hearing from you!"
+                    </p>
+                    <ul class="list-ico">
+                      <li><span class="bi bi-geo-alt"></span> 489, SKS building Edava,695311 ,TVM kerala,India</li>
+                      <li><span class="bi bi-phone"></span>(+91) 7593099542</li>
+                      <li><span class="bi bi-envelope"></span> sreejunathofficial@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href="https://www.facebook.com/sreejunath.bs.7?mibextid=ZbWKwL"><span class="ico-circle"><i
+                              class="bi bi-facebook"></i></span></a></li>
+                      <li><a href="https://instagram.com/the_czar03?igshid=ZDdkNTZiNTM="><span class="ico-circle"><i
+                              class="bi bi-instagram"></i></span></a></li>
+                      <li><a href="https://twitter.com/sreejunath?t=4Ci5FeOOABULqmgbaVwoow&s=09"><span
+                            class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                      <li><a href="https://www.linkedin.com/in/sreejunath-b-s-1a13a3249"><span class="ico-circle"><i
+                              class="bi bi-linkedin"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Contact Section -->
+
+  <footer>
+    <p>&copy; 2023 Electronics Store</p>
+  </footer>
+</body>
+
+</html>
